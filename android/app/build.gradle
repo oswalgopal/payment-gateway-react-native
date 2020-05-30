@@ -130,7 +130,7 @@ android {
 
     defaultConfig {
         applicationId "com.paymentgateway"
-        minSdkVersion rootProject.ext.minSdkVersion
+        minSdkVersion 19
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -193,7 +193,8 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
-
+    // added for the razorpay
+    implementation project(':react-native-razorpay')
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
     }
